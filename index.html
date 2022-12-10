@@ -54,28 +54,28 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </span>
             </button>
-            <div class="collapse navbar-collapse" id="navigation">
+            <div class="collapse navbar-collapse" id="navigation" >
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="../pages/dashboard.html">
+                  <a class="nav-link d-flex align-items-center me-2 active" onclick="route()" aria-current="page" href="/">
                     <i class="fa fa-home opacity-6 text-dark me-1"></i>
                     Home 
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="../pages/profile.html">
+                  <a class="nav-link me-2" onclick="route()" href="/about">
                     <i class="fa fa-user-circle-o opacity-6 text-dark me-1"></i>
                     About-Us 
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="../pages/sign-up.html">
+                  <a class="nav-link me-2" onclick="route()" href="pages/sign-up">
                     <i class="fas fa-user-cog opacity-6 text-dark me-1"></i>
                     Service
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="../pages/sign-in.html">
+                  <a class="nav-link me-2"onclick="route()"  href="pages/sign-in.html">
                     <i class="fas fa-paint-brush opacity-6 text-dark me-1"></i>
                     Portfolio
                   </a>
@@ -93,7 +93,7 @@
       </div>
     </div>
   </div>
-  <main class="main-content  mt-0">
+  <main class="main-content  mt-0" id="main-page">
     <section>
       <div class="page-header min-vh-100">
         <div class="container">
@@ -274,6 +274,7 @@
   <script src="assets/js/core/bootstrap.min.js"></script>
   <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="assets/js/routs.js"></script>
   <script>
     var win = navigator.platform.indexOf('Win') > -1;
     if (win && document.querySelector('#sidenav-scrollbar')) {
